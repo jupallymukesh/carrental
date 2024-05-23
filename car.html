@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>carmu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+	document.onmousedown = disableclick
+         status = "Right Click Disabled"
+         function disableclick(e) {
+             if (event.button == 2)
+                 alert("Sorry Right Click has been disabled!");
+             return false;
+	</script>
+  </head>
+  <body>
+    <header>
+      <h1>Car Rental</h1>
+      <nav>
+        <ul>
+          <li><a href="car.html">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+		  <li><a href="http://localhost/car/admin.php">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+<!--<marquee>CURRENTLY ON UPDATING!</marquee>-->
+      <section id="intro">
+        <h2>Welcome to JMR car rental service!</h2>
+        <p>Choose from our wide selection of vehicles for your next adventure.</p>
+        <a style="text-decoration:none;" href="cars.html" class="btn">View Cars</a>
+      </section>
+      <section id="featured-cars">
+        <h2>Featured Cars</h2>
+        <div class="car">
+          <p class="typecar">MINI</p>
+          <img src="carmini1.jpeg" alt="Car 1">
+          <h3>Car 1</h3>
+          <p>&#8377 1000/day</p>
+          <a href="carrent.html" class="btn">Rent Now</a>
+        </div>
+        <div class="car">
+          <p class="typecar">Prime Sedan</p>
+          <img src="carprime.png" alt="Car 2">
+          <h3>Car 2</h3>
+          <p>&#8377 1500/day</p>
+          <a href="carrent.html" class="btn">Rent Now</a>
+        </div>
+        <div class="car">
+          <p class="typecar">Prime Suv</p>
+          <img src="primesuv.jpeg" alt="Car 3">
+          <h3>Car 3</h3>
+          <p>&#8377 2000/day</p>
+          <a href="carrent.html" class="btn">Rent Now</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="foot">&copy; 2023 Car Rental. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

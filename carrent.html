@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>carrent</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+<body>
+<header>
+<h1>Car Rental</h1>
+      <nav>
+        <ul>
+          <li><a href="car.html">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+</header>
+<main style="background-color:#e8e8e8">
+
+<p class="rentp">To take a car on rent you should fill this necessary details.
+</p>
+
+<div>
+<form action="http://localhost/car/car1.php" method="post">
+
+<div class="formdiv">
+<label for="name" class="displayrent">Name</label>
+<br>
+<input type = "text" id ="name" class="inputrent" name="name">
+</div>
+
+<div class="formdiv">
+<label for="cartype" class ="displayrent">Car Type</label>
+<br>
+<select id="cartype" class="selectf" name="cartype">
+<option class="selectd">Mini</option>
+<option class="selectd">Prime Sedan</option>
+<option class="selectd">Prime Suv</option>
+</select>
+</div>
+
+<div class="formdiv">
+<label for="days" class="displayrent">Number of Days</label>
+<br>
+<input  id="days" class="inputrent" name="days">
+</div>
+
+<div class="formdiv">
+<fieldset class="feildborder">
+<legend class="displayrent">Requirement</legend>
+<label class="displayrent1">
+<input type="radio" name="driver" value="YES">Driver Required
+</label>
+<br>
+<label class="displayrent1">
+<input type="radio" name="driver" value="NO">Driver not Required
+</label>
+</fieldset>
+</div>
+
+<div class="formdiv">
+<label for="sugesstions" class="displayrent">Sugesstions</label>
+<br>
+<textarea id="sugesstions" class ="inputrent" name="sugesstions"></textarea>
+</div>
+
+<div class="formdiv">
+<label class="displayrent1">
+<input type="checkbox" name="terms">
+I accept terms and conditions.
+<br>
+1.you should submit a original and a copy of  valid idproof(adhar,voterid,passport...) until car is returned.
+<br>
+2.if you are a self driver then you should submit a xeror copy of Driving license
+<br>
+3.everything is your responsibilty(user) like(fines,vehicle seize,fuel...).
+<br>
+4.if anything occurs you(user) must take responsibilty.
+</label>
+</div>
+
+<div class="formdiv1">
+<button class="submitbutton">SUBMIT</button>
+</div>
+
+</form>
+</div>
+</main>
+<footer>
+      <p class="foot">&copy; 2023 Car Rental. All rights reserved.</p>
+</footer>
+</body>
+</html>
